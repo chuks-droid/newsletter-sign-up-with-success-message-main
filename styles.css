@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+
+--Tomato: hsl(4, 100%, 67%);
+
+
+--Dark-Slate-Grey: hsl(234, 29%, 20%);
+--Charcoal-Grey: hsl(235, 18%, 26%);
+--Grey: hsl(231, 7%, 60%);
+--White: hsl(0, 0%, 100%);
+
+--Font-size: 16px;
+
+
+--Family: [Roboto](https://fonts.google.com/specimen/Roboto);
+--Weights: 400, 700;
+
+}
+/*------ Sign-up form mobile start------*/
+body{
+    font-family: "Roboto", sans-serif;
+    color: var(--Dark-Slate-Grey);
+}
+main{
+    flex-direction: column;
+    background-color: var(--White);
+    width: 100vw;
+    height: 100vh;
+    
+}
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    margin: 0.5em; 
+}
+p{
+    padding: 0 3em 0 1.4em;
+    margin-bottom: 1.5em;
+    font-weight: 400;
+
+}
+ul{
+    padding: 0em 0.5em 2em 1.7em;
+    margin-left: 1.5em;
+    width: 18em;
+    list-style-position: inside;
+    list-style: url(./assets/images/icon-list.svg);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    
+}
+/*------ Still need to align list-style and content------*/
+li{
+    padding-left: 0.5em;
+    font-size: 1rem;
+    line-height: 1.5em;  
+}
+input[type="email"]{
+    width: 22em;
+    height: 4.5em;
+    border-radius: 0.5em;
+    border: 1px solid var(--Grey);
+    margin-bottom: 1.5em;
+    padding-left: 2em;
+    overflow: hidden;
+    margin-left: 2em;
+    cursor: pointer;
+    
+
+}
+input::placeholder{
+    font-weight: 700;
+}
+input:focus{
+    outline: none;
+}
+
+button[type="submit"]{
+    width: 24em;
+    height: 4.5em;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-weight: 700;
+    border-radius: 0.7em;
+    border: 1px solid var(--Dark-Slate-Grey);
+    margin-left: 2em;
+}
+
+.Email{
+   margin-bottom: 0.5em;
+   font-size: 0.8rem;
+   font-weight: 700;
+   margin-left: 2em;
+}
+/*------ Sign-up form mobile end------*/
+
+/*------ Success message start------*/
+.alert{
+    padding: 9.5em 1.5em 2em 1.5em;
+    width: 100vw;
+    height: 100vh;
+    
+}
+.D-image, .alert{
+    display: none;
+}
+.alert-image-success{
+    width: 4em;
+    margin-bottom: 2em;
+}
+h2{
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+.alert-p{
+    padding: 0 1.5em 0 0;
+}
+button[type="reset"]{
+    width: 24.3em;
+    height: 4.5em;
+    background-color: var(--Dark-Slate-Grey);
+    color: var(--White);
+    font-weight: 700;
+    border-radius: 0.7em;
+    border: 1px solid var(--Dark-Slate-Grey);
+    margin-top: 18em;
+}
+
+/*------ Success message start------*/
+
+
+/*------ Sign-up form mobile end------*/
+@media(width >= 1440px){
+    body{
+        background-color: var(--Charcoal-Grey);
+        margin: 0;
+        height: 100vh;
+       
+    }
+    main{
+        width: 59em;
+        height: 40em;
+        flex-direction: row-reverse;
+        border-radius: 2em;
+        padding-right: 1.5em;
+    }
+    #signUp-form, body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+   .landScape{
+    margin-left: 5%;
+   }
+   h1{
+    font-size: 3.45rem;
+   }
+   p{
+    padding-right: 6em;
+   }
+   ul{
+    width: 19.8em;
+    padding-bottom: 1em;
+    
+   }
+   li{
+    padding-left:0 ;
+    margin-bottom: 1em;
+    width: inherit;
+    
+   }
+   input[type="email"]{
+
+    width: 24em;
+}
+
+button[type="submit"]{
+    width: 26.2em;
+}
+button[type="submit"]:hover{
+    cursor: pointer;
+    background-color: var(--Tomato);
+    border: 1px solid var(--Tomato);
+    box-shadow: 10px 10px 50px var(--Tomato);
+}
+.alert{
+    width: 32em;
+    height: 34em;
+    background-color: var(--White);
+    border-radius: 2em;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0;
+    
+    
+}
+h2{
+    width: 6em;
+    font-size: 3.5rem;
+    margin-left: 1.2em;
+}
+.alert-p{
+    width: 23em;
+    line-height: 1.5;
+    margin-left: 4.2em;
+   
+}
+.alert-image-success{
+    margin-left: 4em;
+    margin-top: 3em;
+}
+.attribution{
+        position: absolute;
+        bottom: 0;
+        margin: auto;
+ }
+ button[type="reset"]{
+    width: 28em;
+    height: 4.5em;
+    margin: 1em 0 10em 5em;
+   
+ }
+ button[type="reset"]:hover{
+    cursor: pointer;
+    background-color: var(--Tomato);
+    border: 1px solid var(--Tomato);
+    box-shadow: 10px 10px 50px var(--Tomato);
+}
+
+.Email{
+    width: 27em;
+}
+.Email span{
+    float: right;
+    color: var(--Tomato);
+}
+/*---------
+input[type="email"]{
+    border: 1px solid var(--Tomato);
+    color: var(--Tomato);
+}
+*/
+.emailInvalid{
+    display: none;
+}
+.email-button{
+    display: block;
+}
+}
+
