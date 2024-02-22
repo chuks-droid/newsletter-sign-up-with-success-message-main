@@ -37,6 +37,8 @@ h1{
     margin-bottom: 0.5em;
     margin: 0.5em; 
 }
+.emailInvalid{
+    display: none;
 p{
     padding: 0 3em 0 1.4em;
     margin-bottom: 1.5em;
